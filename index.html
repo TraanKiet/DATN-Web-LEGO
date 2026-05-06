@@ -3,9 +3,46 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Kietstore - Parts lEGO</title>
+    <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <h1>Hello World</h1>
+    <!-- Thanh điều hướng -->
+    <header>
+      <div class="logo">Kietstore - Parts lEGO</div>
+      <nav>
+        <ul>
+          <li><a href="#">Trang chủ</a></li>
+          <li><a href="#">Mảnh lẻ (Parts)</a></li>
+          <li><a href="#">Theo bộ (Sets)</a></li>
+        </ul>
+      </nav>
+      <div class="search-bar">
+        <input type="text" placeholder="Tìm mã mảnh (Part ID)..." />
+      </div>
+    </header>
+
+    <!-- Danh sách sản phẩm -->
+    <main>
+      <h1>Mảnh Lego Mới Về</h1>
+      <div class="product-container">
+        <!-- Một sản phẩm mẫu -->
+        <div class="product-card">
+          <img src="lego-brick.jpg" alt="Lego Part" />
+          <h3>Mảnh Gạch 2x4 - Blue</h3>
+          <p>Mã: 3001</p>
+          <span class="price">2,000đ</span>
+          <button>Thêm vào giỏ</button>
+        </div>
+        <!-- Lặp lại các card khác ở đây -->
+        <div class="product-card">
+          <img src="lego-brick.jpg" alt="Lego Part" />
+          <h3>Mảnh Gạch 2x4 - Blue</h3>
+          <p>Mã: 3001</p>
+          <span class="price">2,000đ</span>
+          <button>Thêm vào giỏ</button>
+        </div>
+      </div>
+    </main>
   </body>
 </html>
