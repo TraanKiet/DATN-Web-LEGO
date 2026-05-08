@@ -7,8 +7,8 @@ body {
 
 header {
   background-color: #48b8b486; /* Màu đỏ Lego */
-  color: white;
-  padding: 1rem;
+  color: rgb(255, 255, 255);
+  padding: 0.5rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -43,8 +43,67 @@ header {
 
 button {
   background-color: #ffdd47; /* Màu vàng Lego */
-  border: 1px solid #ffdd47;
-  padding: 18px;
+  border-radius: 4rem;
+  padding: 14px;
   cursor: pointer;
   font-weight: bold;
+}
+.top-banners {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  padding: 20px 5%; /* Thụt lề hai bên đẹp */
+  background-color: #f9f9f9;
+}
+
+.banner-card {
+  flex: 1; /* Giúp 3 thẻ luôn có độ rộng bằng nhau */
+  height: 180px;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  padding: 20px;
+  color: white;
+  position: relative;
+  overflow: hidden;
+  box-shadow: 0 4px 15px rgba(0, 0, 1, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.banner-card:hover {
+  transform: scale(1.03); /* Hiệu ứng phóng to nhẹ khi di chuột */
+}
+
+/* Màu sắc đại diện cho từng thẻ (Có thể thay bằng ảnh nền sau này) */
+.lego-theme {
+  background: linear-gradient(45deg, #d11212, #ff4d4d);
+} /* Đỏ */
+.lego-new {
+  background: linear-gradient(45deg, #ffcf00, #ff9900);
+} /* Vàng cam */
+.lego-sale {
+  background: linear-gradient(45deg, #0055b8, #0088ff);
+} /* Xanh dương */
+
+.banner-content h3 {
+  margin: 0 0 10px 0;
+  font-size: 1.5rem;
+  text-transform: uppercase;
+}
+
+.banner-content p {
+  margin: 0 0 15px 0;
+  font-size: 0.9rem;
+  opacity: 0.9;
+}
+
+.btn-link {
+  display: inline-block;
+  padding: 8px 20px;
+  background: white;
+  color: #333;
+  text-decoration: none;
+  border-radius: 20px;
+  font-weight: bold;
+  font-size: 0.8rem;
 }

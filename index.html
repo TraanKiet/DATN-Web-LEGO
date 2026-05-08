@@ -13,33 +13,59 @@
       <nav>
         <ul>
           <li><a href="#">Trang chủ</a></li>
-          <li><a href="#">Mảnh lẻ (Parts)</a></li>
-          <li><a href="#">Theo bộ (Sets)</a></li>
         </ul>
       </nav>
       <div class="search-bar">
         <input type="text" placeholder="Tìm mã mảnh (Part ID)..." />
       </div>
     </header>
+    <section class="top-banners">
+      <div class="banner-card lego-theme">
+        <div class="banner-content">
+          <h3>Mảnh Lego Theo Bộ</h3>
+          <p>Hỗ trợ tìm mảnh theo mã Set</p>
+          <a href="#" class="btn-link">Xem ngay</a>
+        </div>
+      </div>
 
+      <div class="banner-card lego-new">
+        <div class="banner-content">
+          <h3>Hàng Mới Về</h3>
+          <p>Cập nhật liên tục từ KietBrick</p>
+          <a href="#" class="btn-link">Khám phá</a>
+        </div>
+      </div>
+
+      <div class="banner-card lego-sale">
+        <div class="banner-content">
+          <h3>Xả Kho Giá Rẻ</h3>
+          <p>Ưu đãi cho đơn hàng số lượng lớn</p>
+          <a href="#" class="btn-link">Săn deal</a>
+        </div>
+      </div>
+    </section>
     <!-- Danh sách sản phẩm -->
     <main>
-      <h1>Mảnh Lego Mới Về</h1>
+      <h1>Danh sách sản phẩm</h1>
       <div class="product-container">
         <!-- Một sản phẩm mẫu -->
+        <div id="product-list" class="product-container">
+          <!-- Sau này JavaScript sẽ đổ dữ liệu vào đây -->
+          <div class="product-card">...</div>
+        </div>
         <div class="product-card">
-          <img src="lego-brick.jpg" alt="Lego Part" />
-          <h3>Mảnh Gạch 2x4 - Blue</h3>
-          <p>Mã: 3001</p>
-          <span class="price">2,000đ</span>
+          <img src="picture/plate 4x6.jpg" alt="Lego Part" />
+          <h3>Mảnh Gạch 4x6- Blue</h3>
+          <p>Mã: 3032</p>
+          <span class="price">12,000đ</span>
           <button>Thêm vào giỏ</button>
         </div>
         <!-- Lặp lại các card khác ở đây -->
         <div class="product-card">
-          <img src="lego-brick.jpg" alt="Lego Part" />
-          <h3>Mảnh Gạch 2x4 - Blue</h3>
-          <p>Mã: 3001</p>
-          <span class="price">2,000đ</span>
+          <img src="picture/legotechnic.jpg" alt="Lego Part" />
+          <h3>17 Mảnh Lego Technic</h3>
+          <p>Mã: 32556</p>
+          <span class="price">15,000đ</span>
           <button>Thêm vào giỏ</button>
         </div>
       </div>
