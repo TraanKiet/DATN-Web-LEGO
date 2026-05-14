@@ -2,12 +2,12 @@
 body {
   font-family: "Times New Roman", Times, serif;
   margin: 0;
-  background-color: #f4f4f4;
+  background-color: #727272;
 }
 
 header {
-  background-color: #48b8b486; /* Màu đỏ Lego */
-  color: rgb(255, 255, 255);
+  background-color: #72727286; /* Màu đỏ Lego */
+  color: rgb(252, 252, 252);
   padding: 0.5rem;
   display: flex;
   justify-content: space-between;
@@ -22,7 +22,7 @@ header {
 }
 
 .product-card {
-  background: white;
+  background: rgb(255, 255, 255);
   padding: 15px;
   border-radius: 8px;
   text-align: center;
@@ -63,10 +63,10 @@ button {
   display: flex;
   align-items: center;
   padding: 20px;
-  color: white;
+  color: rgb(255, 255, 255);
   position: relative;
   overflow: hidden;
-  box-shadow: 0 4px 15px rgba(0, 0, 1, 0.1);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
   transition: transform 0.3s ease;
 }
 
@@ -76,13 +76,13 @@ button {
 
 /* Màu sắc đại diện cho từng thẻ (Có thể thay bằng ảnh nền sau này) */
 .lego-theme {
-  background: linear-gradient(45deg, #d11212, #ff4d4d);
+  background: linear-gradient(45deg, #d11212, #ff4d4db2);
 } /* Đỏ */
 .lego-new {
-  background: linear-gradient(45deg, #ffcf00, #ff9900);
+  background: linear-gradient(45deg, #eac729, #ff99009c);
 } /* Vàng cam */
 .lego-sale {
-  background: linear-gradient(45deg, #0055b8, #0088ff);
+  background: linear-gradient(45deg, #0055b8, #0088ffc9);
 } /* Xanh dương */
 
 .banner-content h3 {
