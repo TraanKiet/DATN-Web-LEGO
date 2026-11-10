@@ -1,74 +1,54 @@
 <!doctype html>
-<html lang="en">
+<html lang="vi">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Kietstore - Parts LEGO</title>
+    <title>Kietstoree</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <!-- Thanh điều hướng -->
-    <header>
-      <div class="logo">Kietstore - Parts LEGO</div>
-      <nav>
+    <!-- 1. HEADER -->
+    <header class="main-header">
+      <div class="logo">
+        <a href="#">LOGO</a>
+      </div>
+      <nav class="nav-menu">
         <ul>
-          <li><a href="#">Trang chủ</a></li>
+          <li><a href="#" class="active">Mảnh LEGO</a></li>
+          <li><a href="#">LEGO Theo bộ</a></li>
+          <li><a href="#">Nhân vật</a></li>
+          <li><a href="#">Về chúng tôi</a></li>
         </ul>
       </nav>
-      <div class="search-bar">
-        <input type="text" placeholder="Tìm mã mảnh (Part ID)..." />
+      <div class="header-tools">
+        <div class="search-box">
+          <i class="fa-solid fa-magnifying-glass search-icon"></i>
+          <input type="text" placeholder="Tìm kiếm sản phẩm..." />
+        </div>
+        <a href="#" class="tool-icon" title="Giỏ hàng">
+          <i class="fa-solid fa-cart-shopping"></i>
+        </a>
+        <a href="#" class="tool-icon" title="Tài khoản">
+          <i class="fa-regular fa-user"></i>
+        </a>
       </div>
     </header>
-    <section class="top-banners">
-      <div class="banner-card lego-theme">
-        <div class="banner-content">
-          <h3>Mảnh Lego Theo Bộ</h3>
-          <p>Hỗ trợ tìm mảnh theo mã Set</p>
-          <a href="#" class="btn-link">Xem</a>
-        </div>
+    <!-- 2. MAIN -->
+    <main class="content-container">
+      <div id="product-container" class="product-grid">
+        <!-- JavaScript sẽ đổ 10 hoặc 15 sản phẩm vào đây -->
       </div>
-
-      <div class="banner-card lego-new">
-        <div class="banner-content">
-          <h3>Minifigures</h3>
-          <p>...</p>
-          <a href="#" class="btn-link">Khám phá</a>
-        </div>
-      </div>
-
-      <div class="banner-card lego-sale">
-        <div class="banner-content">
-          <h3>Parts</h3>
-          <p>...</p>
-          <a href="#" class="btn-link">Tìm ngay</a>
-        </div>
-      </div>
-    </section>
-    <!-- Danh sách sản phẩm -->
-    <main>
-      <h1>Danh sách sản phẩm</h1>
-      <div class="product-container">
-        <!-- Một sản phẩm mẫu -->
-        <div id="product-list" class="product-container">
-          <!-- Sau này JavaScript sẽ đổ dữ liệu vào đây -->
-          <div class="product-card">...</div>
-        </div>
-        <div class="product-card">
-          <img src="picture/plate 4x6.jpg" alt="Lego Part" />
-          <h3>Mảnh Gạch 4x6- Blue</h3>
-          <p>Mã: 3032</p>
-          <span class="price">12,000đ</span>
-          <button>Thêm vào giỏ</button>
-        </div>
-        <!-- Lặp lại các card khác ở đây -->
-        <div class="product-card">
-          <img src="picture/legotechnic.jpg" alt="Lego Part" />
-          <h3>17 Mảnh Lego Technic</h3>
-          <p>Mã: 32556</p>
-          <span class="price">15,000đ</span>
-          <button>Thêm vào giỏ</button>
-        </div>
+      <!-- Đường kẻ ngăn cách như bản vẽ -->
+      <hr class="divider" />
+      <!-- 3. THANH PHÂN TRANG -->
+      <div id="pagination" class="pagination">
+        <!-- Nút phân trang sẽ được render bằng JS -->
       </div>
     </main>
+    <script src="script.js"></script>
   </body>
 </html>
