@@ -16,7 +16,7 @@ body {
   padding: 18px 5%;
   background-color: #868c5ea2;
   border-bottom: 1px solid #282c37;
-  position: sticky;
+  position: relative;
   top: 0;
   z-index: 100;
 }
@@ -39,7 +39,7 @@ body {
 .nav-menu ul {
   display: flex;
   list-style: none;
-  gap: 36px;
+  gap: 160px;
   align-items: center;
 }
 .nav-menu a {

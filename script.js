@@ -113,7 +113,7 @@ function renderPagination() {
   if (!paginationContainer) return;
   paginationContainer.innerHTML = "";
   const totalPages = Math.ceil(products.length / itemsPerPage);
-  if (totalPages <= 1) return; // Nếu chỉ có 1 trang thì ẩn
+  if (totalPages <= 1) return; //  Chỉ có 1 trang thì ẩn
   for (let i = 1; i <= totalPages; i++) {
     // Điều kiện hiển thị các trang đầu, trang cuối và trang liền kề
     if (
